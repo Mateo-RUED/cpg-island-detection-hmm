@@ -55,55 +55,6 @@ Estos corresponden a los nucleótidos reales del ADN.
 
 ---
 
-## Matriz de transición (estados ocultos)
-
-La matriz de transición \(A\) describe la probabilidad de pasar de un estado oculto a otro:
-
-\[
-A =
-\begin{bmatrix}
-P(I \rightarrow I) & P(I \rightarrow N) \\
-P(N \rightarrow I) & P(N \rightarrow N)
-\end{bmatrix}
-=
-\begin{bmatrix}
-0.9 & 0.1 \\
-0.1 & 0.9
-\end{bmatrix}
-\]
-
-Donde:
-
-- \(P(I → I) = 0.9\)
-- \(P(I → N) = 0.1\)
-- \(P(N → I) = 0.1\)
-- \(P(N → N) = 0.9\)
-
----
-
-## Matriz de emisión (estados observables)
-
-La matriz de emisión \(B\) describe la probabilidad de observar un nucleótido dado el estado oculto:
-
-\[
-B =
-\begin{bmatrix}
-P(A|I) & P(A|N) \\
-P(C|I) & P(C|N) \\
-P(G|I) & P(G|N) \\
-P(T|I) & P(T|N)
-\end{bmatrix}
-=
-\begin{bmatrix}
-0.2 & 0.3 \\
-0.3 & 0.2 \\
-0.3 & 0.2 \\
-0.2 & 0.3
-\end{bmatrix}
-\]
-
----
-
 ## Resumen de los estados
 
 **Estados ocultos (no observables):**
